@@ -24,12 +24,12 @@ use of TSNE(reduced components)is used.
 **Variable scaling**: Transformation of data of high dimensional within specific range, like 0-1 in this model on common scale.
 
 **Class balance:** Class balance is technique for balancing the target class.This can be done by using technique called SMOTE. It generates the training records
-by linear interpolation for the minority class.SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line
+by linear interpolation for the minority class.SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line
 
 ## Modelling
 ### Dimension Reduction
 The given dataset is very high dimensional and it computationally difficult to obtain. So in order to reduced the dimensions, principal component analysis(PCA) technique is used.
-**PCA -** Statistical procedure that uses an orthogonal transformation that converts a set of correlated variables to a set of uncorrelated variables.
+**PCA -** Statistical procedure that uses an orthogonal transformation that converts a set of correlated variables to a set of uncorrelated variables.
 In our case, we have 290 columns before reduction and once we apply PCA, it reduces to 191 columns. If we thoroughly take a look on the graph, the number of components after about 180 showing same variance and we can say that it produces same result after that. Therefore, we will be taking 191 components.
 
  ### Preliminary testing
@@ -58,4 +58,4 @@ dataset such that it produced a understandable output. The same have been applie
 **Note:** Number of features should be same in both dataset otherwise, it can produce error while implementing.
 
 ## Conclusion
-The balanced test accuracy on seen dataset is 59.25 percent and accuracy is 98.38 percent using decision classifier model and for preliminary testing, the accuracy is 98 percent. The are numbers of pre-processing step that have been applied in order to obtain cleaned training dataset. With the help of pipeline and list the steps in pipeline, prediction on unseen dataset is also conducted and saved in the form of excel file. As, the model is very high dimensional, PCA have been implemented such that the it does not affect the rows. On the Unseen dataset, the prediction consist approximately 1 percent of 1 and 99 percent of -1 values. Therefore, we can say that it is rare to find the such epitopes.
+The balanced test accuracy on seen dataset is 59.25 percent and accuracy is 98.38 percent using decision classifier model and for preliminary testing, the accuracy is 98 percent. The are numbers of pre-processing step that have been applied in order to obtain cleaned training dataset. With the help of pipeline and list the steps in pipeline, prediction on unseen dataset is also conducted and saved in the form of excel file. As, the model is very high dimensional, PCA have been implemented such that the it does not affect the rows. On the Unseen dataset, the prediction consist approximately 1 percent of 1 and 99 percent of -1 values. Therefore, we can say that it is rare to find the such epitopes.
