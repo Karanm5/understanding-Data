@@ -1,7 +1,7 @@
 ## Problem In Depth
 Our primary objective is to develop an efficient data mining pipeline to predict new epitopes in the protein for parasite(T.cruzi). This exercise will be focusing
 on the prediction of epitopes for Trypanasoma cruzi(T.cruzi). The raw dataset is given in the form of excel file, which contain 12402 rows. There are 300 columns which are divided into 3 categories, such as
-**Information Column:** There are 9 columns given by ”Info ” containing general information of the observation.
+**Information Column:** There are 9 columns given by ”Info ” containing general information of the observation.
 **Feature columns:** There are 290 feature columns that will trained ”feat ”.
 **Class:** Containing target 1 class with output -1 or 1.
 In order to achieve balanced accuracy for the model, diff erent task required
