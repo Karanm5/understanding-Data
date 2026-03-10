@@ -9,7 +9,7 @@ to performed in chronological order
 
 ## Methodology
 ### Exploratory Data Analysis And Pre-processing
-In this instance, the main objective is to clean the raw dataset and make it uniform throughout with primary focus on feature cluster. Before pre-processing,
+In this instance, the main objective is to clean the raw dataset and make it uniform throughout with primary focus on feature cluster. Before pre-processing,
 split the dataset into training and testing with 80-20 percent split. Perform cleaning task on the training part which consist features only.
 **Missing value:** Value like Na or NaN in dataset. It is extremely important to detect such value and handle in such a way that it did not affect the dataset.
 There are 12165 NaN values and to rectify this issue, use Kmeans method.
